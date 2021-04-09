@@ -1,0 +1,215 @@
+/*
+Theme name: USA Training
+Description: Custom Theme
+*/
+
+/* WordPress Default styles */
+@import url('wp-default.css');
+
+* { margin: 0; padding: 0; outline:0; }
+
+body {
+    font-size: 13px;
+    line-height: 23px;
+    font-family: Arial, Helvetica, Sans-Serif;
+    color: #4d4d4d;
+    background: #fff url(../images/top.gif) no-repeat center 0;
+    position: relative;
+}
+
+body,html { height: 100%;  }
+
+a { color: #0071bc; text-decoration: none; cursor:pointer; }
+a:hover { text-decoration: underline; }
+
+a img { border: 0; }
+
+input, textarea, select { font-family: Arial, Helvetica, sans-serif; font-size:12px; }
+textarea { overflow:hidden; }
+
+.cl { display: block; height: 0; font-size: 0; line-height: 0; text-indent: -4000px; clear: both; }
+.notext { font-size: 0; line-height: 0; text-indent: -4000px; }
+
+.left, .alignleft { float: left; display: inline; }
+.right, .alignright { float: right; display: inline; }
+
+#bottom-bg { background: url(../images/bottom.gif) no-repeat center 0; height: 293px; position: absolute; bottom: 0; width: 100%; left: 0; }
+
+#wrapper { position: relative; z-index: 3; min-height: 100%; height: auto !important; height: 100%; }
+
+#shell { width: 900px; margin: 0 auto; position: relative; z-index: 2; }
+
+#header { height: 158px; position: relative; z-index: 1; padding-right: 3px;  }
+
+h1#logo { width: 510px; position: relative; margin: 0 auto -52px; }
+h1#logo a { display: block; background: url(../images/logo.png); height: 210px; }
+
+#navigation {  }
+
+body.home #navigation ul { height: 128px; }
+body.home #navigation ul li a { color: #fff; font-size: 30px; line-height: 30px; padding-top: 15px; font-weight: bold; height: 113px; }
+body.home #navigation ul li a:hover { color: #ccc; }
+body.home #navigation ul li a strong { padding-bottom: 10px; }
+body.home #navigation ul li.green a strong { padding-bottom: 0; }
+
+#navigation { position: relative; z-index: 2; }
+#navigation ul { list-style-type: none; height: 68px; }
+#navigation ul li { float: left; display: inline; }
+#navigation ul li a { float: left; display: inline; width: 300px; height: 61px; text-align: center; color: #736357; font-size: 22px; line-height: 27px; padding-top: 7px; font-weight: bold; }
+#navigation ul li a strong { display: block; text-transform: uppercase; }
+#navigation ul li a span { display: block; font-size: 21px; line-height: 25px; }
+#navigation ul li.green a span { line-height: 21px; }
+#navigation ul li a:hover { color: #ffffff; text-decoration: none; }
+#navigation ul li.purple a.active { background: #9e005d; }
+#navigation ul li.orange a.active { background: #f7931e; }
+#navigation ul li.green a.active { background: #39b54a; }
+#navigation ul li a.active { color: #fff; }
+
+#main { background: #fff; border-top: 12px solid #29abe2; border-bottom: 12px solid #29abe2; }
+
+body.open-your-own-school #main { border-top-color: #9e005d; border-bottom-color: #9e005d; }
+
+body.take-a-class #main { border-top-color: #f7931e; border-bottom-color: #f7931e; }
+body.take-a-class .inner-nav { border-bottom-color: #f7931e; }
+
+body.real-estate-and-more #main { border-top-color: #39b54a; border-bottom-color: #39b54a; }
+body.real-estate-and-more .inner-nav { border-bottom-color: #39b54a; }
+.home-cnt { background: #000 url(../images/home-img.jpg) no-repeat 0 0; min-height: 411px; height: auto !important; height: 411px; }
+.home-cnt .entry { width: 350px; padding: 46px 0 0 25px; }
+.home-cnt .entry p { font-size: 18px; line-height: 30px; color: #fff; font-weight: bold; padding-bottom: 10px; }
+.home-cnt .entry h3 { font-size: 13px; line-height: 19px; color: #fff; font-weight: normal; padding-top: 10px; }
+
+#footer { color: #fff; font-size: 8px; line-height: 23px; padding-bottom: 30px; }
+#footer p a { color: #fff; }
+
+.inner-nav { height: 33px; padding-top: 13px; border-bottom: 2px solid #d4145a; }
+.inner-nav ul { list-style-type: none; height: 33px; float: left; display: inline; }
+.inner-nav ul li { float: left; display: inline; border-right: 1px solid #4d4d4d; padding-right: 26px; margin-right: 27px; }
+.inner-nav ul li.last { border: none; padding-right: 0; margin-right: 0; }
+.inner-nav ul li a { float: left; display: inline; font-size: 18px; color: #4d4d4d; }
+.inner-nav ul li a:hover { color: #0071bc; text-decoration: none; }
+.inner-nav ul li.current_page_item a { color: #0071bc; }
+
+#page-content { padding: 24px 35px 0 33px; min-height: 401px; height: auto !important; height: 401px; }
+#page-content p { padding-bottom: 14px; }
+
+#page-content {  }
+#page-content .image { float: right; display: inline; }
+#page-content {  }
+#page-content h4.list-title { font-size: 13px; line-height: 23px; }
+#page-content ul { list-style-type: disc; padding-bottom: 4px; }
+#page-content ul li { list-style-type: disc; padding-bottom: 4px; margin-left:14px; }
+
+#accordion {padding-bottom: 4px; }
+#accordion  h3 a { background: url(../images/arrow.gif) no-repeat 0 4px; padding: 0 0 7px 23px; font-size: 18px; }
+
+#accordion div{
+	padding:10px 0 0 20px;
+}
+
+ol { padding: 0 0 5px 20px; }
+blockquote { padding: 10px 10px 10px 40px; }
+
+.tabNavigation{
+	list-style:none;
+	text-align:center;
+	border-bottom:1px solid #ccc;
+	font-size:18px;
+	padding:0 0 5px 0;
+	margin:0 0 10px 0;
+}
+
+.tabNavigation li{
+	display:inline;
+	padding:0px !important;
+	margin:0 25px 0 0 !important;
+}
+
+.tabNavigation li a{
+	text-decoration:none !important;
+}
+
+.tabNavigation li a.selected{
+	color:#666 !important;
+}
+
+#page-content .tabs div ul {
+	list-style:none !important;
+	margin:0 0 0px 0;
+	text-align:center;
+}
+
+#page-content .tabs div ul li{
+	display:inline;
+	margin:0px 10px 0 0;
+	padding:0px;
+	font-weight:bold;
+	font-size:14px;
+}
+
+#page-content .tabs div ul li.current a{
+	color:#666 !important;
+}
+
+.ajdeVise li{
+	width:262px;
+	float:left;
+	margin-right:20px !important;
+	display:block;
+}
+
+#page-content .tabs div .noMargin {
+	margin:0px !important;
+}
+
+.ajdeVise h1{
+	color:#999;
+	font-size:18px;
+	font-weight:bold;
+	border-bottom:1px solid #eee;
+	margin:25px 0;
+}
+
+.ajdeVise h4 {
+	cursor:pointer !important;
+	color:#333;
+}
+
+.ajdeVise h4:hover {
+	color:#666;
+}
+
+.ajdeVise .subCont{
+	display:none;
+	padding:0 0 5px 0;
+}
+
+#page-content .tabs div .ajdeVise li{
+	color:#4D4D4D;
+	font-size:13px;
+	font-weight:normal;
+}
+
+.helpClass {
+	color:#0071BC !important;
+}
+
+
+
+.classroom-tables table {
+    width: 100%;
+}
+
+
+
+.classroom-tables th {
+    text-align: left;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 2px;
+}
+
+.classroom-tables td {
+    border-bottom: 1px solid #ddd;
+    padding: 2px;
+}
